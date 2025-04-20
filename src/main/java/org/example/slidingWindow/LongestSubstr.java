@@ -1,4 +1,4 @@
-package org.example.SlidingWindow;
+package org.example.slidingWindow;
 
 import java.util.HashMap;
 
@@ -8,6 +8,11 @@ public class LongestSubstr
 	public static void main(String[] args)
 	{
 		System.out.println(new LongestSubstr().lengthOfLongestSubstring("abcfabcc"));
+
+		//Input: "abcabcbb"
+		//Output: 3
+		//Explanation: The answer is "abc", with the length of 3.
+
 	}
 
 	//Longest Substring Without Repeating Characters
