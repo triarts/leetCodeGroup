@@ -5,6 +5,12 @@ import java.util.List;
 
 public class Permutation
 {
+//🔢 Permutation:
+//Order matters.
+//
+//It’s about arranging items.
+//
+//Example: The passwords "ABC" and "CAB" are different permutations.
 	public static void main(String[] args)
 	{
 		new Permutation().permute(new int[]{1,2,3});
@@ -52,13 +58,13 @@ public class Permutation
 				continue;
 			}
 
-			currPath.add(nums[i]);
+			currPath.add(nums[i]); 					// choose
 			used[i] = true;
 
-			rotate(nums, used, currPath, results);
+			rotate(nums, used, currPath, results); 	// explore
 
 			//reset condition
-			currPath.remove(currPath.size()-1);
+			currPath.remove(currPath.size()-1);		// unchoose
 			used[i] = false;
 		}
 	}
