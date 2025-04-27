@@ -45,7 +45,7 @@ public class GraphValidTree {
 
 		if (root1 == root2) {
 			return false; // Cycle detected
-		}``
+		}
 
 		parent[root2] = root1; // Union the two components
 		return true;
