@@ -83,15 +83,28 @@ Ask yourself:
 
 ---
 
+### 🧠 Simple Trick to Visualize Recursion:
 
-🧠 Simple Trick to Visualize Recursion:
-Imagine a stack of calls.
-Think of each recursive call as if you're pushing it onto a stack.
+#### Imagine a **stack of calls**.
 
-So, you're going deeper into the graph with each new recursive call.
+1. **Think of each recursive call** as if you're pushing it onto a **stack**.
+   - So, you're going deeper into the graph with each new recursive call.
+   - The "current node" you're working on is the one at the **top** of the stack.
 
-The "current node" you're working on is the one at the top of the stack.
+2. **Backtracking** is like **popping** off the top of the stack.
+   - Once you reach a dead-end (no more neighbors to visit), you "backtrack" by removing the node from the stack and return to the previous one.
+   
+### 💡 The Core Idea of Recursion:
 
-Backtracking is like popping off the top of the stack.
+- **Function calls** are like a series of steps you're stacking up.
+- You **push** each step onto the "call stack" (the recursion stack).
+- When you reach a dead-end or base case (like revisiting a node or hitting a leaf), you **pop** and backtrack.
 
-Once you reach a dead-end (no more neighbors to visit), you "backtrack" by removing the node from the stack and return to the previous one.
+
+- **Recursion is a stack of function calls.**
+- Each recursive call is a **step deeper** into the graph, and each step gets **pushed onto the stack**.
+- If we revisit a node **that's already on the stack**, it means we’ve cycled back (cycle detected).
+- After visiting all neighbors or finding a cycle, we **backtrack** and "pop" off the stack.
+
+---
+
