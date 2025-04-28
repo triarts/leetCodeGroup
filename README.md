@@ -82,3 +82,16 @@ Ask yourself:
 7. **Are we grouping things?** → Union Find
 
 ---
+
+
+🧠 Simple Trick to Visualize Recursion:
+Imagine a stack of calls.
+Think of each recursive call as if you're pushing it onto a stack.
+
+So, you're going deeper into the graph with each new recursive call.
+
+The "current node" you're working on is the one at the top of the stack.
+
+Backtracking is like popping off the top of the stack.
+
+Once you reach a dead-end (no more neighbors to visit), you "backtrack" by removing the node from the stack and return to the previous one.
